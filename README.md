@@ -1,27 +1,77 @@
 # ML Project Template
 
-A reference implementation of a **well-structured Machine Learning project**.  
-
-Most ML practitioners start with notebooks and a couple of folders. It works — until the project grows. Then reproducibility breaks, pipelines become messy, and deploying models turns into chaos.  
-
-This repository shows how to organize ML projects **like a professional software system**: modular, reproducible, and production-ready. The structure is based on lessons learned from 10+ industrial-level ML projects.  
+> **TL;DR** — Template project Machine Learning yang well-structured, modular, reproducible, dan production-ready. Based on lessons learned dari 10+ industrial ML projects.
 
 ---
 
-## Why Project Structure Matters  
+## 🔬 Purpose
 
-Machine learning projects aren’t just about training models. You deal with:  
+Machine learning projects aren't just about training models. You deal with:
 
-- Multiple versions of datasets  
-- Experimental code evolving into production workflows  
-- Model artifacts that must be versioned and tracked  
-- Complex pipelines from raw data to predictions  
+- Multiple versions of datasets
+- Experimental code evolving into production workflows
+- Model artifacts that must be versioned and tracked
+- Complex pipelines from raw data to predictions
 
-Without structure, these complexities quickly spiral out of control.  
+**This template shows how to organize ML projects like professional software:**
 
-This repo demonstrates how to design an ML project that is **maintainable, reproducible, and ready for production**.  
+- Modular structure (src/, configs/, tests/)
+- Reproducible pipelines
+- Production-ready workflows
 
 ---
 
-## Project Structure
-![ML Project Structure](./images/project_structure.png)
+## 🏗️ Project Structure
+
+```
+├── config/              # Configuration files
+├── notebooks/           # Jupyter notebooks (EDA, prototyping)
+├── src/                 # Source code (data processing, modeling)
+├── tests/               # Unit tests
+├── images/              # Documentation images
+├── requirements-*.txt   # Dependencies
+├── Dockerfile           # Container definition
+├── docker-compose.yml   # Local dev environment
+└── Makefile             # Task automation
+```
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Docker & Docker Compose
+- Jupyter
+- Pytest (testing)
+- MLOps tools (configurable)
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone and setup
+git clone https://github.com/henryferdianto/ml-project-template.git
+cd ml-project-template
+
+# Using Docker
+docker-compose up -d
+
+# Or local
+pip install -r requirements-prod.txt
+make help
+```
+
+---
+
+## ⚠️ Notes
+
+- This is a **template/fork** from upstream (mlacademyai/ml-project-template)
+- Customize `config/` and `src/` based on your project needs
+- Add your own data processing and modeling logic
+
+---
+
+## 📜 License
+
+MIT License — see [LICENSE](LICENSE).
